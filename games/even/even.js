@@ -1,5 +1,5 @@
 import {
-  random, answer, correctAnswer, opposite, errorMessage, congratulations,
+  random, answer, correctAnswer, opposite, errorMessage, congratulations, questions,
 } from '../../src/index.js';
 
 // Условия игры:
@@ -11,7 +11,7 @@ export const evenGameConditions = () => {
 export const gameLogic = () => {
   for (let i = 0; i < 3; i += 1) {
     const pushNumber = random();
-    console.log('Questions: ', pushNumber);
+    questions(pushNumber);
     const pushAnswer = answer();
 
     const checking1 = (pushNumber % 2 === 0) && (pushAnswer === 'yes');
