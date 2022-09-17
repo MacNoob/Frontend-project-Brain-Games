@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-import { greeting, acquaintance } from '../src/index.js';
-import calcGame from '../games/calc/calc.js';
+import { greeting, acquaintance, getName } from '../src/index.js';
+import calcGameConditions from '../games/calc/calc.js';
 
-greeting();
 acquaintance();
-calcGame();
+getName();
+greeting();
+calcGameConditions();
