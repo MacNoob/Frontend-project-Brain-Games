@@ -19,7 +19,7 @@ export const greeting = () => {
 };
 
 // Генерация рандомного числа от 0 до 10;
-export const random = (number) => {
+export const random = (number = 10) => {
   const randomNumber = Math.floor(Math.random() * number);
   return randomNumber;
 };
@@ -28,6 +28,7 @@ export const random = (number) => {
 let userAnswer;
 export const answer = () => {
   userAnswer = readlineSync.question('You answer: ');
+  return userAnswer;
 };
 
 // Функция для использования в случае корректного ответа:
@@ -36,12 +37,15 @@ export const correctAnswer = () => {
 };
 
 // Проверка условия для even:
-export const opposite = () => (answer === 'yes' ? 'no' : 'yes');
+export const opposite = () => {
+  const opposite1 = (userAnswer === 'yes' ? 'no' : 'yes');
+  return opposite1;
+};
 
 // Сообщение об ошибочном ответе:
 export const errorMessage = () => {
   console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${opposite()}'. \n Let's try again, ${userName}!`);
 };
 
-// Поздравление игрока:
+// Поздравление игрока
 export const congratulations = () => console.log(`Congratulations, ${userName}!`);
