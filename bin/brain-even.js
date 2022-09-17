@@ -1,7 +1,12 @@
 #!/usr/bin/env node
-import { greeting, acquaintance } from '../src/index.js';
-import evenGame from '../games/even/even.js';
+import {
+  acquaintance, getName, greeting,
+} from '../src/index.js';
 
-greeting();
+import { evenGameConditions, gameLogic } from '../games/even/even.js';
+
 acquaintance();
-evenGame();
+getName();
+greeting();
+evenGameConditions();
+gameLogic();
