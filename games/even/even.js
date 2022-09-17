@@ -12,13 +12,12 @@ export const gameLogic = () => {
   for (let i = 0; i < 3; i += 1) {
     const pushNumber = random();
     questions(pushNumber);
-    const pushAnswer = answer();
 
-    const checking1 = (pushNumber % 2 === 0) && (pushAnswer === 'yes');
-    const checking2 = (pushNumber % 2 !== 0) && (pushAnswer === 'no');
+    const checking1 = (pushNumber % 2 === 0) && (answer() === 'yes');
+    const checking2 = (pushNumber % 2 !== 0) && (answer() === 'no');
     if (checking1 === true || checking2 === true) {
       correctAnswer();
-    } else if (pushAnswer !== ('yes' || 'no')) {
+    } else if (answer() !== ('yes' || 'no')) {
       return errorMessage();
     } else {
       return opposite(errorMessage());
