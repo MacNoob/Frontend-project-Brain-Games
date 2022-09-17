@@ -18,6 +18,9 @@ export const greeting = () => {
   console.log(`Hello, ${userName}`);
 };
 
+// Задаем вопрос:
+export const questions = (meaning) => console.log('Questions: ', meaning);
+
 // Генерация рандомного числа от 0 до 10;
 export const random = (number = 10) => {
   const randomNumber = Math.floor(Math.random() * number);
