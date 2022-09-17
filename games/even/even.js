@@ -11,9 +11,8 @@ export const evenGameConditions = () => {
 // Движок:
 export const gameLogic = () => {
   for (let i = 0; i < 3; i += 1) {
-    let pushNumber = 0;
     const multNumber = 10;
-    pushNumber = random(multNumber);
+    const pushNumber = random(multNumber);
     console.log('Questions: ', pushNumber);
     const pushAnswer = answer();
 
