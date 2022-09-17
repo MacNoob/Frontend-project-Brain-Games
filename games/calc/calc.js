@@ -1,5 +1,5 @@
-const calcGame = () => {
-  const evenCondition = console.log('What is the result of the expression?');
-  return evenCondition;
+const calcGameConditions = () => {
+  const calcCondition = console.log('What is the result of the expression?');
+  return calcCondition;
 };
-export default calcGame;
+export default calcGameConditions;
