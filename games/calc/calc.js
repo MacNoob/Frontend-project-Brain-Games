@@ -9,7 +9,6 @@ const getRandomTry = (min, max) => Math.floor(Math.random() * (max - min)) + min
 const task = () => {
   let question;
   let correctAnswer;
-  correctAnswer = String(correctAnswer);
 
   for (let i = 0; i < 3; i += 1) {
     let randomNumber = getRandomTry(1, 4);
@@ -21,23 +20,20 @@ const task = () => {
     switch (randomNumber) {
       case randomNumber = 1:
         correctAnswer = randomNumberOne + randomNumberTwo;
-        correctAnswer = String(correctAnswer);
         question = `${quest1}`;
         break;
       case randomNumber = 2:
         correctAnswer = randomNumberOne - randomNumberTwo;
-        correctAnswer = String(correctAnswer);
         question = `${quest2}`;
         break;
       case randomNumber = 3:
         correctAnswer = randomNumberOne * randomNumberTwo;
-        correctAnswer = String(correctAnswer);
         question = `${quest3}`;
         break;
       default:
     }
   }
-  const result = [question, correctAnswer];
+  const result = [question, String(correctAnswer)];
 
   return result;
 };
