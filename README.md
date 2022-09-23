@@ -5,4 +5,4 @@
 
 <a href="https://asciinema.org/a/e0NOtBdLepc1y80o5gXGKth5f" target="_blank"><img src="https://asciinema.org/a/e0NOtBdLepc1y80o5gXGKth5f.svg" /></a>
 
-[![asciicast](https://asciinema.org/a/zRy3lDuOcTxnV9r50im3ZjgDr.svg)](https://asciinema.org/a/zRy3lDuOcTxnV9r50im3ZjgDr)
+<script id="asciicast-zRy3lDuOcTxnV9r50im3ZjgDr" src="https://asciinema.org/a/zRy3lDuOcTxnV9r50im3ZjgDr.js" async></script>
