@@ -5,9 +5,10 @@ import getRandom from '../../src/randomNumber.js';
 const description = ('What is the result of the expression?');
 
 const getRandomTry = (min, max) => Math.floor(Math.random() * (max - min)) + min;
-let question;
-let correctAnswer;
+
 const task = () => {
+  let question;
+  let correctAnswer;
   for (let i = 0; i < 3; i += 1) {
     let randomNumber = getRandomTry(1, 4);
     const randomNumberOne = getRandom();
@@ -32,7 +33,6 @@ const task = () => {
     }
   }
   const result = [question, String(correctAnswer)];
-
   return result;
 };
 
