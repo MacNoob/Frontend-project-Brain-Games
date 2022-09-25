@@ -8,3 +8,6 @@ Game "brain-even"
 
 Game "brain-calc"
 [![asciicast](https://asciinema.org/a/zRy3lDuOcTxnV9r50im3ZjgDr.svg)](https://asciinema.org/a/zRy3lDuOcTxnV9r50im3ZjgDr)
+
+Game "brain-gcd" 
+<a href="https://asciinema.org/a/s5BNpUI33tpOHYdOFGAGqKeee" target="_blank"><img src="https://asciinema.org/a/s5BNpUI33tpOHYdOFGAGqKeee.svg" /></a>
