@@ -31,7 +31,7 @@ const task = () => {
   const temp = progress[randomIndex];
   progress[randomIndex] = '..';
 
-  const question = progress;
+  const question = progress.join(' ');
 
   const result = [question, String(correctAnswer)];
   return result;
