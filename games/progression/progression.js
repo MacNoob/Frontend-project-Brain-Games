@@ -27,9 +27,10 @@ const task = () => {
   const randomIndex = Math.floor(Math.random() * progress.length);
 
   const correctAnswer = progress[randomIndex];
-
+  const dot = '..';
+  // eslint-disable-next-line no-unused-vars
   const temp = progress[randomIndex];
-  progress[randomIndex] = '..';
+  progress[randomIndex] = dot;
 
   const question = progress.join(' ');
 
