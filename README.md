@@ -17,4 +17,4 @@ Game "brain-progression"
 [![asciicast](https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9.svg)](https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9)
 
 Game "brain-prime"
-[![asciicast](https://asciinema.org/a/RgzZLzzCCuuVP5hqPXU8vSJkG.svg)](https://asciinema.org/a/RgzZLzzCCuuVP5hqPXU8vSJkG)
+<a href="https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9" target="_blank"><img src="https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9.svg" /></a>
