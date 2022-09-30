@@ -35,6 +35,7 @@ const task = () => {
   const question = progress.join(' ');
 
   const result = [question, String(correctAnswer)];
+
   return result;
 };
 
