@@ -20,8 +20,10 @@ const task = () => {
   }
   const correctAnswer = randomNumberOne;
   const result = [question, String(correctAnswer)];
+
   return result;
 };
 
 const gameGcdStart = () => gameEngine(description, task);
+
 export default gameGcdStart;
