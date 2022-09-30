@@ -7,7 +7,9 @@ const gameEngine = (description, task) => {
 
   console.log(description);
 
-  for (let i = 0; i < 3; i += 1) {
+  const numbersOfAttemps = 3;
+
+  for (let i = 0; i < numbersOfAttemps; i += 1) {
     const [question, correctAnswer] = task();
 
     console.log(`Question: ${question}`);
