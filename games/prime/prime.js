@@ -13,6 +13,7 @@ const primeNumber = (number) => {
       return false;
     }
   }
+
   return true;
 };
 
@@ -21,8 +22,10 @@ export const task = () => {
   const correctAnswer = primeNumber(question) ? 'yes' : 'no';
 
   const result = [question, correctAnswer];
+
   return result;
 };
 
 const gamePrimeStart = () => gameEngine(description, task);
+
 export default gamePrimeStart;
