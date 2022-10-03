@@ -6,11 +6,6 @@
 make install
 ```
 
-## Run tests
-
-```bash
-make test
-```
 
 [![Actions Status](https://github.com/MacNoob/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/MacNoob/frontend-project-44/actions)
 
