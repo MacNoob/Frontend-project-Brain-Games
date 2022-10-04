@@ -26,7 +26,7 @@ If the requirements do not match, follow these steps:
 
 ___
 
-### Node.js
+## Node.js
 
 **For Linux:**
 
@@ -65,7 +65,7 @@ Download and install [this](https://nodejs.org/en/download/) distributive and ru
 
 ___
 
-### NPM
+## NPM
 
 NPM is installed together with the Node.js package, games are installed using it:
 
