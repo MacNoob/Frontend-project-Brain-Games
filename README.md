@@ -1,12 +1,19 @@
-# Hexlet Project "Brain Games". Frontend 01.
+<h1 align="center"> Hexlet Project "Brain Games".</h1>
 
-## Description:
+<div align="center">
+
+[![Actions Status](https://github.com/MacNoob/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/MacNoob/frontend-project-44/actions)
+<a href="https://codeclimate.com/github/MacNoob/frontend-project-44/maintainability"><img
+src="https://api.codeclimate.com/v1/badges/940ac966ca5ce0e71d96/maintainability" /></a>
+</div>
+
+<h2 align="center"> Description: </h2>
 
 This project contains five console games aimed at developing the cognitive abilities of the human brain.
 
 ___
 
-## Installing:
+## Install
 
 Before installing games, make sure you have the recommended versions of [Node](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) installed.
 Check their versions in your console:
@@ -96,7 +103,7 @@ ___
 
 ### 1). Game: "Brain-Even"
 
-**About:**
+**About**
 
 > In this game, you have to determine whether the given number is even or not. The game will check your answer and display the result.
 
@@ -112,7 +119,7 @@ ___
 
 ### 2). Game: "Brain-Calc"
 
-**About:**
+**About**
 
 > In this game you have to calculate the sum, difference or result of multiplying two numbers. After entering your answer, the game will determine the result and display it on the screen. All calculations must be done in the mind.
 
@@ -128,7 +135,7 @@ ___
 
 ### 3). Game: "Brain-GCD" 
 
-**About:**
+**About**
 
 > Your task is to find the greatest common divisor of the two given random numbers. The game will indicate if your answer is correct.
 
@@ -144,7 +151,7 @@ ___
 
 ### 4). Game: "Brain-Progression"
 
-**About:**
+**About**
 
 > You will be presented with a series of numbers forming an arithmetic progression, one of the progression numbers will be hidden. Your task is to determine this number. The game will notify you of the result.
 
@@ -160,7 +167,7 @@ ___
 
 ### 5). Game: "Brain-Prime"
 
-**About:**
+**About**
 
 > Determine if the number indicated by the game is prime. Do not use tables from the Internet.
 
@@ -173,5 +180,3 @@ brain-prime
 <a href="https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9" target="_blank"><img src="https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9.svg" /></a>
 
 ___
-
-[![Actions Status](https://github.com/MacNoob/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/MacNoob/frontend-project-44/actions) <a href="https://codeclimate.com/github/MacNoob/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/940ac966ca5ce0e71d96/maintainability" /></a>
