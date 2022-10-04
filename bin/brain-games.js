@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import greatest from '../src/cli.js';
+import toGreet from '../src/cli.js';
 
-greatest();
+toGreet();
