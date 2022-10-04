@@ -1,4 +1,4 @@
-# Hexlet Project "Brain Games". Frontend 01.   |    [![Actions Status](https://github.com/MacNoob/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/MacNoob/frontend-project-44/actions) <a href="https://codeclimate.com/github/MacNoob/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/940ac966ca5ce0e71d96/maintainability" /></a>
+# Hexlet Project "Brain Games". Frontend 01.
 
 ## Description:
 
@@ -173,3 +173,5 @@ $ brain-prime
 <a href="https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9" target="_blank"><img src="https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9.svg" /></a>
 
 ___
+
+[![Actions Status](https://github.com/MacNoob/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/MacNoob/frontend-project-44/actions) <a href="https://codeclimate.com/github/MacNoob/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/940ac966ca5ce0e71d96/maintainability" /></a>
