@@ -35,7 +35,7 @@ ___
 
 ## Node.js
 
-**For Linux:**
+**For Linux**
 
 Typing in console:
 
@@ -47,7 +47,7 @@ and check ```$ node -v``` in console.
 
 ___
 
-**For MacOS:**
+**For MacOS**
 
 First you need to install the ```Homebrew``` package manager.
 
@@ -66,7 +66,7 @@ and check ```$ node -v``` in console.
 
 ___
 
-**For Windows:**
+**For Windows**
 
 Download and install [this](https://nodejs.org/en/download/) distributive and run check ```$ node -v``` in console.
 
@@ -76,7 +76,7 @@ ___
 
 NPM is installed together with the Node.js package, games are installed using it:
 
-### Game installation:
+### Game installation
 
 Go to the directory where you want to install the games and execute in the console:
 
@@ -99,7 +99,7 @@ npm link
 ___
 
 
-## Launching games:
+## Launching games
 
 ### 1). Game: "Brain-Even"
 
