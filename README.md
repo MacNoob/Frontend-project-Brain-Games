@@ -7,9 +7,9 @@
 src="https://api.codeclimate.com/v1/badges/940ac966ca5ce0e71d96/maintainability" /></a>
 </div>
 
-<h2 align="center"> Description: </h2>
+<h2 align="center"> Description </h2>
 
-This project contains five console games aimed at developing the cognitive abilities of the human brain.
+**This project contains five console games aimed at developing the cognitive abilities of the human brain.**
 
 ___
 
@@ -180,3 +180,9 @@ brain-prime
 <a href="https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9" target="_blank"><img src="https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9.svg" /></a>
 
 ___
+
+## Contributor
+
+[Andrey MacNoob T.](https://github.com/MacNoob)
+
+
