@@ -22,9 +22,9 @@ $ npm -v
 
 You must have installed Node.js versions at least ```13.13.0``` and NPM version at least ```6.14.4```.
 
-___
-
 If the requirements do not match, follow these steps:
+
+___
 
 ### Node.js
 
