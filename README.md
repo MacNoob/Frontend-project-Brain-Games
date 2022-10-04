@@ -182,7 +182,7 @@ brain-prime
 ___
 
 ## Contributor
-
+  
 [Andrey MacNoob T.](https://github.com/MacNoob)
 
 
