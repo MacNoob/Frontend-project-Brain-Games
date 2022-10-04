@@ -12,12 +12,12 @@ Before installing games, make sure you have the recommended versions of [Node](h
 Check their versions in your console:
 
 ```bash
-$ node -v
+node -v
 ```
 and
 
 ```bash
-$ npm -v
+npm -v
 ```
 
 You must have installed Node.js versions at least ```13.13.0``` and NPM version at least ```6.14.4```.
@@ -33,7 +33,7 @@ ___
 Typing in console:
 
 ```bash
-$ sudo apt install nodejs -g
+sudo apt install nodejs -g
 ```
 
 and check ```$ node -v``` in console.
@@ -53,7 +53,7 @@ Copy this line to the console and run:
 After installation ```brew```, execute in the console:
 
 ```bash
-$ brew install node
+brew install node
 ```
 and check ```$ node -v``` in console.
 
@@ -74,19 +74,19 @@ NPM is installed together with the Node.js package, games are installed using it
 Go to the directory where you want to install the games and execute in the console:
 
 ```bash
-$ npm install git+https://github.com/MacNoob/frontend-project-44.git
+npm install git+https://github.com/MacNoob/frontend-project-44.git
 ```
 
 Initialize NPM by executing in the console:
 
 ```bash
-$ npm init
+npm init
 ```
 
 And create dependencies with:
 
 ```bash
-$ npm link
+npm link
 ```
 
 ___
@@ -103,7 +103,7 @@ ___
 **To start the game run in the console:**
 
 ```bash
-$ brain-even
+brain-even
 ```
 
 <a href="https://asciinema.org/a/e0NOtBdLepc1y80o5gXGKth5f" target="_blank"><img src="https://asciinema.org/a/e0NOtBdLepc1y80o5gXGKth5f.svg" /></a>
@@ -119,7 +119,7 @@ ___
 **To start the game run in the console:**
 
 ```bash
-$ brain-calc
+brain-calc
 ```
 
 [![asciicast](https://asciinema.org/a/zRy3lDuOcTxnV9r50im3ZjgDr.svg)](https://asciinema.org/a/zRy3lDuOcTxnV9r50im3ZjgDr)
@@ -135,7 +135,7 @@ ___
 **To start the game run in the console:**
 
 ```bash
-$ brain-gcd
+brain-gcd
 ```
 
 <a href="https://asciinema.org/a/s5BNpUI33tpOHYdOFGAGqKeee" target="_blank"><img src="https://asciinema.org/a/s5BNpUI33tpOHYdOFGAGqKeee.svg" /></a>
@@ -151,7 +151,7 @@ ___
 **To start the game run in the console:**
 
 ```bash
-$ brain-progression
+brain-progression
 ```
 
 [![asciicast](https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9.svg)](https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9)
@@ -167,7 +167,7 @@ ___
 **To start the game run in the console:**
 
 ```bash
-$ brain-prime
+brain-prime
 ```
 
 <a href="https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9" target="_blank"><img src="https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9.svg" /></a>
