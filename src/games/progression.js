@@ -1,4 +1,4 @@
-import processTheTask from '../src/index.js';
+import processTheTask from '../index.js';
 
 const description = ('What number is missing in the progression?');
 

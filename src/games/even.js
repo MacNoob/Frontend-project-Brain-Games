@@ -1,5 +1,5 @@
-import processTheTask from '../src/index.js';
-import getRandom from '../src/utils.js';
+import processTheTask from '../index.js';
+import getRandom from '../utils.js';
 
 const description = ('Answer "yes" if the number is even, otherwise answer "no".');
 

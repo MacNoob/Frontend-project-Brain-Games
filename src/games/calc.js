@@ -1,6 +1,6 @@
-import processTheTask from '../src/index.js';
+import processTheTask from '../index.js';
 
-import getRandom from '../src/utils.js';
+import getRandom from '../utils.js';
 
 const description = ('What is the result of the expression?');
 
