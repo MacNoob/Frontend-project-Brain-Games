@@ -136,7 +136,7 @@ ___
 brain-prime
 ```
 
-<a href="https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9" target="_blank"><img src="https://asciinema.org/a/HX4sijaxKAofMNIV4uL0tlBY9.svg" /></a>
+[![asciicast](https://asciinema.org/a/BeqFJPewzbITPjY9a4MRwpFh0.svg)](https://asciinema.org/a/BeqFJPewzbITPjY9a4MRwpFh0)
 
 ___
 
