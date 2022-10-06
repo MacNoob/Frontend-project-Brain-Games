@@ -29,68 +29,27 @@ npm -v
 
 You must installed Node.js versions at least ```13.13.0``` and NPM version at least ```6.14.4```.
 
-If the requirements do not match, follow these steps:
-
 ___
-
-## Node.js
-
-**For Linux**
-
-Typing in console:
-
-```bash
-sudo apt install nodejs -g
-```
-
-and check ```$ node -v``` in console.
-
-___
-
-**For MacOS**
-
-First you need to install the ```Homebrew``` package manager.
-
-Copy this line to the console and run:
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-After installation ```brew```, execute in the console:
-
-```bash
-brew install node
-```
-and check ```$ node -v``` in console.
-
-___
-
-**For Windows**
-
-Download and install [this](https://nodejs.org/en/download/) distributive and run check ```$ node -v``` in console.
-
-___
-
-## NPM
-
-NPM is installed together with the Node.js package, games are installed using it:
 
 ### Game installation
 
 Go to the directory where you want to install the games and execute in the console:
 
 ```bash
-npm install git+https://github.com/MacNoob/frontend-project-44.git
+git init
 ```
-
-Initialize NPM by executing in the console:
 
 ```bash
-npm init
+git pull https://github.com/MacNoob/frontend-project-44.git
 ```
 
-And create dependencies with:
+Download dependencies:
+
+```bash
+npm ci
+```
+
+And reload dependencies with:
 
 ```bash
 npm link
