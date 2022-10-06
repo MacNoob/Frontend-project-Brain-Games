@@ -8,8 +8,8 @@ export const calculate = () => {
   const randomNumberOne = getRandomNumber(1, 100);
   const randomNumberTwo = getRandomNumber(1, 100);
   const operators = ['+', '-', '*'];
-  const randomNumber = Math.floor(Math.random() * operators.length);
-  switch (randomNumber) {
+  const operator = Math.floor(Math.random() * operators.length);
+  switch (operator) {
     case operators.indexOf('+'):
       correctAnswer = randomNumberOne + randomNumberTwo;
       question = `${randomNumberOne} ${operators[0]} ${randomNumberTwo}`;
