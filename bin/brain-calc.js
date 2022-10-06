@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import startCalc from '../src/games/calc.js';
+import { description, getTask } from '../src/games/calc.js';
+import processTheTask from '../src/index.js';
 
-startCalc();
+processTheTask(description, getTask);

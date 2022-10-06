@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import startGcd from '../src/games/gcd.js';
+import { description, getTask } from '../src/games/gcd.js';
+import run from '../src/index.js';
 
-startGcd();
+run(description, getTask);
