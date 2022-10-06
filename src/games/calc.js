@@ -1,7 +1,6 @@
 import getRandomNumber from '../utils.js';
 
 export const description = ('What is the result of the expression?');
-
 const operators = ['+', '-', '*'];
 
 export const calculate = () => {
