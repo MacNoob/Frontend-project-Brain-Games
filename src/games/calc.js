@@ -1,35 +1,35 @@
-import processTheTask from '../index.js';
+import getRandomNumber from '../utils.js';
 
-import getRandom from '../utils.js';
+export const description = ('What is the result of the expression?');
 
-const description = ('What is the result of the expression?');
-
-let question;
 let correctAnswer;
-
-const getTask = () => {
-  const randomNumberOne = getRandom(1, 100);
-  const randomNumberTwo = getRandom(1, 100);
+let question;
+export const calculate = () => {
+  const randomNumberOne = getRandomNumber(1, 100);
+  const randomNumberTwo = getRandomNumber(1, 100);
   const operators = ['+', '-', '*'];
-
   const randomNumber = Math.floor(Math.random() * operators.length);
-
-  if (randomNumber === operators.indexOf('+')) {
-    correctAnswer = randomNumberOne + randomNumberTwo;
-    question = `${randomNumberOne} ${operators[0]} ${randomNumberTwo}`;
-  } else if (randomNumber === operators.indexOf('-')) {
-    correctAnswer = randomNumberOne - randomNumberTwo;
-    question = `${randomNumberOne} ${operators[1]} ${randomNumberTwo}`;
-  } else if (randomNumber === operators.indexOf('*')) {
-    correctAnswer = randomNumberOne * randomNumberTwo;
-    question = `${randomNumberOne} ${operators[2]} ${randomNumberTwo}`;
+  switch (randomNumber) {
+    case operators.indexOf('+'):
+      correctAnswer = randomNumberOne + randomNumberTwo;
+      question = `${randomNumberOne} ${operators[0]} ${randomNumberTwo}`;
+      break;
+    case operators.indexOf('-'):
+      correctAnswer = randomNumberOne - randomNumberTwo;
+      question = `${randomNumberOne} ${operators[1]} ${randomNumberTwo}`;
+      break;
+    case operators.indexOf('*'):
+      correctAnswer = randomNumberOne * randomNumberTwo;
+      question = `${randomNumberOne} ${operators[2]} ${randomNumberTwo}`;
+      break;
+    default:
+      break;
   }
+  return [question, String(correctAnswer)];
+};
 
-  const result = [question, String(correctAnswer)];
+export const getTask = () => {
+  const result = calculate();
 
   return result;
 };
-
-const startCalc = () => processTheTask(description, getTask);
-
-export default startCalc;

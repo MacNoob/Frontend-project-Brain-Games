@@ -1,13 +1,12 @@
-import getRandom from '../utils.js';
-import processTheTask from '../index.js';
+import getRandomNumber from '../utils.js';
 
-const description = ('Find the greatest common divisor of given numbers.');
-
-const getTask = () => {
+export const description = ('Find the greatest common divisor of given numbers.');
+export const getTask = () => {
   let temp;
-  let randomNumberOne = getRandom(1, 100);
-  let randomNumberTwo = getRandom(1, 100);
+  let randomNumberOne = getRandomNumber(1, 100);
+  let randomNumberTwo = getRandomNumber(1, 100);
   const question = [`${randomNumberOne} ${randomNumberTwo}`];
+
   while (randomNumberOne !== randomNumberTwo) {
     if (randomNumberOne > randomNumberTwo) {
       randomNumberOne -= randomNumberTwo;
@@ -23,7 +22,3 @@ const getTask = () => {
 
   return result;
 };
-
-const startGcd = () => processTheTask(description, getTask);
-
-export default startGcd;

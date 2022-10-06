@@ -1,8 +1,6 @@
-import processTheTask from '../index.js';
+import getRandomNumber from '../utils.js';
 
-const description = ('Answer "yes" if given number is prime. Otherwise answer "no".');
-
-const randomNumber = (min, max) => Math.floor(Math.random() * (max - min) + max);
+export const description = ('Answer "yes" if given number is prime. Otherwise answer "no".');
 
 const primeNumber = (number) => {
   if (number < 2) {
@@ -18,14 +16,9 @@ const primeNumber = (number) => {
 };
 
 export const getTask = () => {
-  const question = randomNumber(2, 100);
+  const question = getRandomNumber(2, 100);
   const correctAnswer = primeNumber(question) ? 'yes' : 'no';
-
   const result = [question, correctAnswer];
 
   return result;
 };
-
-const startPrime = () => processTheTask(description, getTask);
-
-export default startPrime;
