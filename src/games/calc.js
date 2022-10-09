@@ -1,14 +1,15 @@
 import getRandomNumber from '../utils.js';
+import run from '../index.js';
 
-export const description = ('What is the result of the expression?');
+const description = ('What is the result of the expression?');
 const operators = ['+', '-', '*'];
+const randomNumberOne = getRandomNumber(1, 100);
+const randomNumberTwo = getRandomNumber(1, 100);
+const randomOperator = operators[getRandomNumber(0, 3)];
+const question = `${randomNumberOne} ${randomOperator} ${randomNumberTwo}`;
+let correctAnswer;
 
 export const calculate = () => {
-  const randomNumberOne = getRandomNumber(1, 100);
-  const randomNumberTwo = getRandomNumber(1, 100);
-  const randomOperator = operators[getRandomNumber(0, 3)];
-  const question = `${randomNumberOne} ${randomOperator} ${randomNumberTwo}`;
-  let correctAnswer;
   switch (randomOperator) {
     case '+':
       correctAnswer = randomNumberOne + randomNumberTwo;
@@ -22,11 +23,11 @@ export const calculate = () => {
     default:
       break;
   }
-  return [question, String(correctAnswer)];
+  return correctAnswer;
 };
 
-export const getTask = () => {
-  const result = calculate();
+const getTask = () => [question, String(calculate(correctAnswer))];
 
-  return result;
-};
+const runCalc = () => run(description, getTask);
+
+export default runCalc;
