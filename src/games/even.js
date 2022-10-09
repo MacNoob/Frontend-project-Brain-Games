@@ -1,11 +1,17 @@
 import getRandomNumber from '../utils.js';
+import run, { attempsCount } from '../index.js';
 
-export const description = ('Answer "yes" if the number is even, otherwise answer "no".');
+const description = ('Answer "yes" if the number is even, otherwise answer "no".');
 
-export const getTask = () => {
-  const question = getRandomNumber(1, 100);
-  const correctAnswer = (question % 2 === 0 ? 'yes' : 'no');
-  const result = [question, correctAnswer];
+const runEven = () => {
+  let i = 0;
+  const task = [];
+  for (i = 0; i < attempsCount; i += 1) {
+    const question = getRandomNumber(1, 100);
+    const correctAnswer = (question % 2 === 0 ? 'yes' : 'no');
+    task.push([question, correctAnswer]);
+  }
 
-  return result;
+  run(description, task);
 };
+export default runEven;
