@@ -3,31 +3,36 @@ import run from '../index.js';
 
 const description = ('What is the result of the expression?');
 const operators = ['+', '-', '*'];
-const randomNumberOne = getRandomNumber(1, 100);
-const randomNumberTwo = getRandomNumber(1, 100);
-const randomOperator = operators[getRandomNumber(0, 3)];
-const question = `${randomNumberOne} ${randomOperator} ${randomNumberTwo}`;
-let correctAnswer;
+const minRange = 1;
+const maxRange = 100;
+const minIndex = 0;
+const maxIndex = 2;
 
-export const calculate = () => {
-  switch (randomOperator) {
+const calculate = (one, two, operator) => {
+  switch (operator) {
     case '+':
-      correctAnswer = randomNumberOne + randomNumberTwo;
-      break;
+      return one + two;
     case '-':
-      correctAnswer = randomNumberOne - randomNumberTwo;
-      break;
+      return one - two;
     case '*':
-      correctAnswer = randomNumberOne * randomNumberTwo;
-      break;
+      return one * two;
     default:
-      break;
+      return null;
   }
-  return correctAnswer;
 };
 
-const getTask = () => [question, String(calculate(correctAnswer))];
+const getData = () => {
+  const randomNumberOne = getRandomNumber(minRange, maxRange);
+  const randomNumberTwo = getRandomNumber(minRange, maxRange);
+  const randomOperator = operators[getRandomNumber(minIndex, maxIndex)];
+  const question = `${randomNumberOne} ${randomOperator} ${randomNumberTwo}`;
+  const correctAnswer = calculate(randomNumberOne, randomNumberTwo, randomOperator);
+  const result = [String(question), String(correctAnswer)];
+  return result;
+};
 
-const runCalc = () => run(description, getTask);
+const runCalc = () => {
+  run(description, getData);
+};
 
 export default runCalc;

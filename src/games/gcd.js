@@ -1,24 +1,26 @@
 import getRandomNumber from '../utils.js';
+import run from '../index.js';
 
-export const description = ('Find the greatest common divisor of given numbers.');
-export const getTask = () => {
-  let temp;
-  let randomNumberOne = getRandomNumber(1, 100);
-  let randomNumberTwo = getRandomNumber(1, 100);
-  const question = [`${randomNumberOne} ${randomNumberTwo}`];
+const description = ('Find the greatest common divisor of given numbers.');
+const minRange = 1;
+const maxRange = 100;
 
-  while (randomNumberOne !== randomNumberTwo) {
-    if (randomNumberOne > randomNumberTwo) {
-      randomNumberOne -= randomNumberTwo;
-    } else
-    if (randomNumberOne < randomNumberTwo) {
-      temp = randomNumberOne;
-      randomNumberOne = randomNumberTwo;
-      randomNumberTwo = temp;
-    }
-  }
-  const correctAnswer = randomNumberOne;
-  const result = [question, String(correctAnswer)];
+const getGCD = function gcd(num1, num2) {
+  return num2 ? gcd(num2, num1 % num2) : num1;
+};
+
+const getData = () => {
+  const number1 = getRandomNumber(minRange, maxRange);
+  const number2 = getRandomNumber(minRange, maxRange);
+  const question = [`${number1} ${number2}`];
+  const correctAnswer = getGCD(number1, number2);
+  const result = [String(question), String(correctAnswer)];
 
   return result;
 };
+
+const runGCD = () => {
+  run(description, getData);
+};
+
+export default runGCD;

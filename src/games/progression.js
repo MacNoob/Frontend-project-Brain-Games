@@ -1,22 +1,28 @@
-export const description = ('What number is missing in the progression?');
-const makeProgression = () => {
-  const startNumber = (min, max) => Math.floor(Math.random() * (max - min) + min);
-  let variableOfStartNumber = startNumber(2, 10);
-  const multiplier = (min, max) => Math.floor(Math.random() * (max - min) + min);
-  const variableOfMultiplier = multiplier(2, 5);
-  const quantity = (min, max) => Math.floor(Math.random() * (max - min) + min);
-  const variableOfQuantity = quantity(5, 10);
-  const arr = [];
+import run from '../index.js';
+import getRandomNumber from '../utils.js';
 
-  for (let i = 0; i < variableOfQuantity; i += 1) {
-    arr.push(variableOfStartNumber);
-    variableOfStartNumber += variableOfMultiplier;
+const description = ('What number is missing in the progression?');
+const minStart = 2;
+const maxStart = 10;
+const minStep = 2;
+const maxStep = 5;
+const minLength = 5;
+const maxLength = 10;
+
+const getProgression = () => {
+  let progressionStart = getRandomNumber(minStart, maxStart);
+  const progressionStep = getRandomNumber(minStep, maxStep);
+  const progressionLength = getRandomNumber(minLength, maxLength);
+  const progression = [];
+  for (let i = 0; i < progressionLength; i += 1) {
+    progression.push(progressionStart);
+    progressionStart += progressionStep;
   }
 
-  return arr;
+  return progression;
 };
-export const getTask = () => {
-  const progress = makeProgression();
+const getData = () => {
+  const progress = getProgression();
   const randomIndex = Math.floor(Math.random() * progress.length);
   const correctAnswer = progress[randomIndex];
   const dot = '..';
@@ -24,7 +30,13 @@ export const getTask = () => {
   const temp = progress[randomIndex];
   progress[randomIndex] = dot;
   const question = progress.join(' ');
-  const result = [question, String(correctAnswer)];
+  const result = [String(question), String(correctAnswer)];
 
   return result;
 };
+
+const runProgression = () => {
+  run(description, getData);
+};
+
+export default runProgression;

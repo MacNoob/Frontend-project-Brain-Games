@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const attempsCount = 3;
+export const attempsCount = 3;
 
 const run = (description, getTask) => {
   console.log('Welcome to the Brain Games!');

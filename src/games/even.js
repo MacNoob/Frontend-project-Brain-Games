@@ -1,17 +1,22 @@
 import getRandomNumber from '../utils.js';
-import run, { attempsCount } from '../index.js';
+import run from '../index.js';
 
 const description = ('Answer "yes" if the number is even, otherwise answer "no".');
+const minRange = 1;
+const maxRange = 100;
+
+const isEven = (number) => (number % 2 === 0 ? 'yes' : 'no');
+
+export const getData = () => {
+  const question = getRandomNumber(minRange, maxRange);
+  const correctAnswer = isEven(question);
+  const result = [String(question), String(correctAnswer)];
+
+  return result;
+};
 
 const runEven = () => {
-  let i = 0;
-  const task = [];
-  for (i = 0; i < attempsCount; i += 1) {
-    const question = getRandomNumber(1, 100);
-    const correctAnswer = (question % 2 === 0 ? 'yes' : 'no');
-    task.push([question, correctAnswer]);
-  }
-
-  run(description, task);
+  run(description, getData);
 };
+
 export default runEven;
