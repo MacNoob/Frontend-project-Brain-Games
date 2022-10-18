@@ -1,5 +1,5 @@
 import run from '../index.js';
-import getRandomNumber from '../utils.js';
+import { getRandomNumber } from '../utils.js';
 
 const description = ('Answer "yes" if given number is prime. Otherwise answer "no".');
 const minRange = 2;
@@ -17,16 +17,15 @@ const isPrime = (number) => {
   return true;
 };
 
-const getData = () => {
+const generateRound = () => {
   const question = getRandomNumber(minRange, maxRange);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
-  const result = [String(question), String(correctAnswer)];
 
-  return result;
+  return [question, correctAnswer];
 };
 
 const runPrime = () => {
-  run(description, getData);
+  run(description, generateRound);
 };
 
 export default runPrime;

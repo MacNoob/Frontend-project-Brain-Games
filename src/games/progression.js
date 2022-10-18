@@ -1,5 +1,5 @@
 import run from '../index.js';
-import getRandomNumber from '../utils.js';
+import { getRandomNumber, getRandomIndex } from '../utils.js';
 
 const description = ('What number is missing in the progression?');
 const minStart = 2;
@@ -9,34 +9,30 @@ const maxStep = 5;
 const minLength = 5;
 const maxLength = 10;
 
-const getProgression = () => {
-  let progressionStart = getRandomNumber(minStart, maxStart);
-  const progressionStep = getRandomNumber(minStep, maxStep);
-  const progressionLength = getRandomNumber(minLength, maxLength);
+const getProgression = (start, step, length) => {
   const progression = [];
-  for (let i = 0; i < progressionLength; i += 1) {
-    progression.push(progressionStart);
-    progressionStart += progressionStep;
+  for (let i = 0; i < length; i += 1) {
+    progression.push(start + step * i);
   }
 
   return progression;
 };
-const getData = () => {
-  const progress = getProgression();
-  const randomIndex = Math.floor(Math.random() * progress.length);
-  const correctAnswer = progress[randomIndex];
+const generateRound = () => {
+  const progressionStart = getRandomNumber(minStart, maxStart);
+  const progressionStep = getRandomNumber(minStep, maxStep);
+  const progressionLength = getRandomNumber(minLength, maxLength);
+  const progression = getProgression(progressionStart, progressionStep, progressionLength);
+  const hiddenIndexElement = getRandomIndex(progression);
+  const correctAnswer = String(progression[hiddenIndexElement]);
   const dot = '..';
-  // eslint-disable-next-line no-unused-vars
-  const temp = progress[randomIndex];
-  progress[randomIndex] = dot;
-  const question = progress.join(' ');
-  const result = [String(question), String(correctAnswer)];
+  progression[hiddenIndexElement] = dot;
+  const question = progression.join(' ');
 
-  return result;
+  return [question, correctAnswer];
 };
 
 const runProgression = () => {
-  run(description, getData);
+  run(description, generateRound);
 };
 
 export default runProgression;
