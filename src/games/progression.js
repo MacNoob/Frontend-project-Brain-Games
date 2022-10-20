@@ -8,6 +8,7 @@ const minStep = 2;
 const maxStep = 5;
 const minLength = 5;
 const maxLength = 10;
+const coverElement = '..';
 
 const getProgression = (start, step, length) => {
   const progression = [];
@@ -18,14 +19,13 @@ const getProgression = (start, step, length) => {
   return progression;
 };
 const generateRound = () => {
-  const progressionStart = getRandomNumber(minStart, maxStart);
-  const progressionStep = getRandomNumber(minStep, maxStep);
-  const progressionLength = getRandomNumber(minLength, maxLength);
-  const progression = getProgression(progressionStart, progressionStep, progressionLength);
+  const start = getRandomNumber(minStart, maxStart);
+  const step = getRandomNumber(minStep, maxStep);
+  const length = getRandomNumber(minLength, maxLength);
+  const progression = getProgression(start, step, length);
   const hiddenIndexElement = getRandomIndex(progression);
   const correctAnswer = String(progression[hiddenIndexElement]);
-  const dot = '..';
-  progression[hiddenIndexElement] = dot;
+  progression[hiddenIndexElement] = coverElement;
   const question = progression.join(' ');
 
   return [question, correctAnswer];

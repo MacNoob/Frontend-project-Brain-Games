@@ -15,7 +15,7 @@ const calculate = (x, y, operator) => {
     case '*':
       return x * y;
     default:
-      throw new Error(`Unknown state calculate: '${calculate}'!`);
+      throw new Error(`Unknown operator received: '${operator}'!`);
   }
 };
 
