@@ -1,7 +1,7 @@
 import { getRandomNumber, getRandomIndex } from '../utils.js';
 import run from '../index.js';
 
-const description = ('What is the result of the expression?');
+const description = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 const minRange = 1;
 const maxRange = 100;

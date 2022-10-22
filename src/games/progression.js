@@ -1,14 +1,14 @@
 import run from '../index.js';
 import { getRandomNumber, getRandomIndex } from '../utils.js';
 
-const description = ('What number is missing in the progression?');
+const description = 'What number is missing in the progression?';
 const minStart = 2;
 const maxStart = 10;
 const minStep = 2;
 const maxStep = 5;
 const minLength = 5;
 const maxLength = 10;
-const coverElement = '..';
+const cover = '..';
 
 const getProgression = (start, step, length) => {
   const progression = [];
@@ -23,9 +23,9 @@ const generateRound = () => {
   const step = getRandomNumber(minStep, maxStep);
   const length = getRandomNumber(minLength, maxLength);
   const progression = getProgression(start, step, length);
-  const hiddenIndexElement = getRandomIndex(progression);
-  const correctAnswer = String(progression[hiddenIndexElement]);
-  progression[hiddenIndexElement] = coverElement;
+  const hiddenElementIndex = getRandomIndex(progression);
+  const correctAnswer = String(progression[hiddenElementIndex]);
+  progression[hiddenElementIndex] = cover;
   const question = progression.join(' ');
 
   return [question, correctAnswer];
