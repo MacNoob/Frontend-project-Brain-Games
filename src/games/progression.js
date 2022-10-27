@@ -18,6 +18,7 @@ const getProgression = (start, step, length) => {
 
   return progression;
 };
+
 const generateRound = () => {
   const start = getRandomNumber(minStart, maxStart);
   const step = getRandomNumber(minStep, maxStep);
